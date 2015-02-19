@@ -1,0 +1,49 @@
+@import "reset.css";
+
+body {
+    //background: red;
+    nav {
+        height: 100px;
+
+        .navbar-header {
+            width: 300px;
+            height: 100px;
+            background: url("../Images/logo.png") no-repeat, red;
+            background-position: 10px 10px;
+        }
+
+        #bs-example-navbar-collapse-1 {
+            margin: 40px;
+        }
+    }
+
+    #main {
+        display: flex;
+        flex-flow: row wrap;
+
+        aside {
+            border: 1px solid red;
+            order: 1;
+            flex-grow: 1;
+            width: 20%;
+        }
+
+        #content {
+            border: 1px solid red;
+            order: 2;
+            flex-grow: 1;
+            width: 79%;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        div:first-of-type {
+            order: 1;
+        }
+        div:last-of-type {
+            order: 2;
+        }
+    }
+}
