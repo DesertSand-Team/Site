@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Styles/NaEdoCss-o.css"/>
+</head>
+<body onload="changeImage()">
+<div id="content">
+    <header>
+        <ul>
+            <li><a href=""><-previous</a></li>
+            <li><a onClick="changeImage()">random</a></li>
+            <li><a onClick="getNext()">next-></a></li>
+        </ul>
+    </header>
+    <article id="image-gallery">
+    </article>
+</div>
+</body>
+<script>
+    var messages = [
+            "При кака Алекс",
+            "Когато някой каже, че е решил задачата с рекурсия",
+            "Когато се сблъскахме със CSS",
+            "Когато някой ми предложи да се занимавам с извънкласни проекти",
+            "Как правим Teamwork",
+            "Когато имам 400 точки в джъджа",
+            "Когато кажа, че знам как да реша задачата с три звездички",
+            "Как се сблъсках с ООП",
+            "Как разбирам рекурсията",
+            "Когато ми обясняват косвена рекурсия",
+            "На изпита по Web Fundamentals",
+            "Когато видя, че джъджа затваря след 20 минути",
+            "Как си представям програмистите",
+            "Когато позиционирам нещо в CSS",
+            "Когато знам как да реша задачата",
+            "Как пишем статиите в Уикипедия",
+    ];
+
+    function changeImage() {
+        var index = Math.floor(Math.random() * messages.length);
+        var message = "<span>" + messages[index] + "</span><img src=\"Images/Gifs/" +
+                index + ".gif\"/>";
+        document.getElementById("image-gallery").innerHTML = message;
+    }
+
+    function getNext() {
+        var content = document.getElementById("image-gallery").textContent;
+        var index = content.match(/\\d+/);
+        var maxLength = messages.length - 1;
+        index++;
+        if (index > maxLength) {
+            index = 0;
+        }
+        var message = "<span>" + messages[index] + "</span><img src=\"Images/Gifs/" +
+                index + ".gif\"/>";
+        document.getElementById("image-gallery").innerHTML = message;
+    }
+</script>
+</html>
