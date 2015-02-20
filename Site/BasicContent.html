@@ -10,7 +10,7 @@
 <div id="content">
     <header>
         <ul>
-            <li><a href=""><-previous</a></li>
+            <li><a onClick="getPrevious()"><-previous</a></li>
             <li><a onClick="changeImage()">random</a></li>
             <li><a onClick="getNext()">next-></a></li>
         </ul>
@@ -39,24 +39,37 @@
             "Как пишем статиите в Уикипедия",
     ];
 
+    var globalIndex = 0;
+
     function changeImage() {
-        var index = Math.floor(Math.random() * messages.length);
-        var message = "<span>" + messages[index] + "</span><img src=\"Images/Gifs/" +
-                index + ".gif\"/>";
+        globalIndex = Math.floor(Math.random() * messages.length);
+        var message = "<span>" + messages[globalIndex] + "</span><img src=\"Images/Gifs/" +
+                globalIndex + ".gif\"/>";
         document.getElementById("image-gallery").innerHTML = message;
     }
 
     function getNext() {
-        var content = document.getElementById("image-gallery").textContent;
-        var index = content.match(/\\d+/);
-        var maxLength = messages.length - 1;
-        index++;
-        if (index > maxLength) {
-            index = 0;
+        maxLength = messages.length - 1;
+        globalIndex++;
+        console.info(globalIndex);
+        if (globalIndex > maxLength) {
+            globalIndex = 0;
         }
-        var message = "<span>" + messages[index] + "</span><img src=\"Images/Gifs/" +
-                index + ".gif\"/>";
+        var message = "<span>" + messages[globalIndex] + "</span><img src=\"Images/Gifs/" +
+                globalIndex + ".gif\"/>";
         document.getElementById("image-gallery").innerHTML = message;
     }
+
+    function getPrevious() {
+        globalIndex--;
+        console.info(globalIndex);
+        if (globalIndex < 0) {
+            globalIndex = messages.length - 1;
+        }
+        var message = "<span>" + messages[globalIndex] + "</span><img src=\"Images/Gifs/" +
+                globalIndex + ".gif\"/>";
+        document.getElementById("image-gallery").innerHTML = message;
+    }
+
 </script>
 </html>
