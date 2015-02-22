@@ -4,55 +4,38 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
     <link href="Styles/Home.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="Http://SoftUni.bg"></a>
-            </div>
+    <header>
+        <div class="logo" onclick="RedirectSoftUni()"></div>
+        <nav>
+            <ul id="main-menu">
+                <li><a href="#">Content</a></li>
+                <li><a href="#">Content</a></li>
+                <li>
+                    <a href="#">Content &#9662;</a>
+                    <ul id="drop-down">
+                    	<li><a href="#">Content</a></li>
+                    	<li><a href="#">Content</a></li>
+                    	<li><a href="#">Content</a></li>
+                    	<li><a href="#">Content</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Content</a></li>
+            </ul>
+            <form class="search" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for..." />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </span>
+                </div>
+            </form>
+        </nav>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link 1<span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                        </span>
-                    </div><!-- /input-group -->
-                </form>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+    </header>
     <div id="main">
         <aside>
             <ul>
@@ -72,5 +55,11 @@
         <div>validation</div>
         <div>&copy</div>
     </footer>
+
+    <script>
+        function RedirectSoftUni() {
+            window.location.replace("https://softuni.bg/");
+        }
+    </script>
 </body>
 </html>

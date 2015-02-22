@@ -1,21 +1,10 @@
 @import "reset.css";
+@import "header.css";
 
 body {
     //background: red;
-    nav {
-        height: 100px;
-
-        .navbar-header {
-            width: 300px;
-            height: 100px;
-            background: url("../Images/logo.png") no-repeat, red;
-            background-position: 10px 10px;
-        }
-
-        #bs-example-navbar-collapse-1 {
-            margin: 40px;
-        }
-    }
+    max-width: 1600px;
+    margin: 0 auto;
 
     #main {
         display: flex;
@@ -39,9 +28,11 @@ body {
     footer {
         display: flex;
         flex-flow: row wrap;
+
         div:first-of-type {
             order: 1;
         }
+
         div:last-of-type {
             order: 2;
         }
