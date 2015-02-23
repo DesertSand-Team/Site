@@ -1,11 +1,12 @@
 ﻿header {
   font-size: 1rem;
   width: auto;
-  height: 130px;
+  height: 132px;
   display: flex;
   flex-flow: column wrap;
   background: #2A6496;
-  background: linear-gradient(to top, #2A6496, #fff); }
+  background: linear-gradient(to top, #2A6496, #fff);
+  border-bottom: 2px solid #fff; }
   header .logo {
     min-width: 100px;
     order: 1;
@@ -35,8 +36,6 @@
         header nav #main-menu li:last-of-type a {
           border-right: 1px solid #fff;
           border-top-right-radius: 10px; }
-        header nav #main-menu li:hover #drop-down {
-          display: block; }
         header nav #main-menu li a {
           display: block;
           width: 100%;
@@ -45,13 +44,16 @@
           color: #fff;
           text-decoration: none;
           border-top: 1px solid #fff;
-          text-transform: capitalize; }
+          text-transform: capitalize;
+          transition: 2s; }
           header nav #main-menu li a:visited {
             color: #fff;
             text-decoration: none; }
           header nav #main-menu li a:hover {
             background: #fff;
             color: #2A6496; }
+        header nav #main-menu li #menu {
+          cursor: pointer; }
         header nav #main-menu li #drop-down {
           display: none;
           position: absolute; }
