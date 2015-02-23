@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "header.css";
+@import "aside.css";
 
 body {
     //background: red;
@@ -11,17 +12,17 @@ body {
         flex-flow: row wrap;
 
         aside {
-            border: 1px solid red;
+            //border: 1px solid red;
             order: 1;
             flex-grow: 1;
-            width: 20%;
+            width: 10%;
         }
 
         #content {
             border: 1px solid red;
             order: 2;
             flex-grow: 1;
-            width: 79%;
+            width: 85%;
         }
     }
 

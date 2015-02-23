@@ -1,0 +1,39 @@
+@import "main.scss";
+
+aside {
+    background: $mainColor;
+    background: linear-gradient(to right, #fff, $mainColor 25%, $mainColor);
+    margin-right: 10px;
+    min-width: 100px;
+    height: 150px;
+
+    ul {
+        li {
+            a {
+                display: block;
+                padding: 10px 0;
+                border: 1px solid #fff;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                text-transform: capitalize;
+
+                &:visited {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                &:hover {
+                    color: #fff;
+                    background: linear-gradient(to right, #fff, $mainColor 25%, $mainColor 75%, #fff);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    aside {
+        display: none;
+    }
+}
