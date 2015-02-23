@@ -135,24 +135,30 @@ header {
             width: 60%;
 
             #main-menu {
-                margin-top: 8px;
+                margin-top: 4px;
                 width: 100%;
 
                 li {
                     float: none;
                     width: 100%;
+                    border-bottom: 2px groove #fff;
 
                     &:first-of-type a {
-                        border-radius: 10px 10px 0 0;
+                        border: none;
+                        border-radius: 0;
+                        //border-radius: 10px 10px 0 0;
                     }
 
                     &:last-of-type a {
-                        border-bottom: 1px solid #fff;
-                        border-radius: 0 0 10px 10px;
+                        border: none;
+                        //border-bottom: 1px solid #fff;
+                         border-radius: 0;
+                        //border-radius: 0 0 10px 10px;
                     }
 
                     a {
-                        border: 1px solid #fff;
+                        border: none;
+                        //border: 1px solid #fff;
                         border-bottom: none;
                     }
 
@@ -187,24 +193,30 @@ header {
             width: 60%;
 
             #main-menu {
-                margin-top: 8px;
+                margin-top: 4px;
                 width: 100%;
 
                 li {
                     float: none;
                     width: 100%;
+                    border-bottom: 2px groove #fff;
 
                     &:first-of-type a {
-                        border-radius: 10px 10px 0 0;
+                        border: none;
+                        border-radius: 0;
+                        //border-radius: 10px 10px 0 0;
                     }
 
                     &:last-of-type a {
-                        border-bottom: 1px solid #fff;
-                        border-radius: 0 0 10px 10px;
+                        border: none;
+                        //border-bottom: 1px solid #fff;
+                         border-radius: 0;
+                        //border-radius: 0 0 10px 10px;
                     }
 
                     a {
-                        border: 1px solid #fff;
+                        border: none;
+                        //border: 1px solid #fff;
                         border-bottom: none;
                     }
 
@@ -241,24 +253,30 @@ header {
             margin: 0 5%;
 
             #main-menu {
-                margin-top: 8px;
+                margin-top: 4px;
                 width: 100%;
 
                 li {
                     float: none;
                     width: 100%;
+                    border-bottom: 2px groove #fff;
 
                     &:first-of-type a {
-                        border-radius: 10px 10px 0 0;
+                        border: none;
+                        border-radius: 0;
+                        //border-radius: 10px 10px 0 0;
                     }
 
                     &:last-of-type a {
-                        border-bottom: 1px solid #fff;
-                        border-radius: 0 0 10px 10px;
+                        border: none;
+                        //border-bottom: 1px solid #fff;
+                         border-radius: 0;
+                        //border-radius: 0 0 10px 10px;
                     }
 
                     a {
-                        border: 1px solid #fff;
+                        border: none;
+                        //border: 1px solid #fff;
                         border-bottom: none;
                     }
 
