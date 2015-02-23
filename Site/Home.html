@@ -6,6 +6,7 @@
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
     <link href="Styles/Home.css" type="text/css" rel="stylesheet" />
+    <script src="Scripts/scripts.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -45,47 +46,21 @@
                 <li>Link 4</li>
             </ul>
         </aside>
-        <div id="content">
-            Lorem ipsum dolor sit amet, a elit adipiscing donec nec eget feugiat, vitae elit, nonummy nascetur, venenatis vestibulum nostra eget, et nisl tempus ut cursus. Senectus maecenas, bibendum quis, dolor est aptent suscipit pede, erat arcu nulla turpis morbi sed. Justo amet sit mollis, vestibulum vel id facilisis vel convallis tempus, penatibus ut lacinia sociosqu tincidunt orci sed. Egestas tristique lectus in. Etiam aenean, sem laboris bibendum et, elementum turpis vivamus wisi vitae fringilla urna, sit nonummy purus aliquam, magna eget sodales in ac.
-
-            Sapien magna in amet, wisi non congue non eget curabitur, consequat eros faucibus, vel quis mi. Placerat ac eu nec. Sed et, integer mi ultrices eros est aliquet, taciti adipiscing elit. Non mi est mus purus. Diam ut elit mi, lacus nunc diam dolor, phasellus nullam mauris at tincidunt elementum metus, vivamus vestibulum eu elementum sapien. Velit consequat magna etiam non ipsum, neque varius, ac feugiat rhoncus, in varius ac in.
+        <div id="content" onload="changeImage()">
+            <header>
+                <ul>
+                    <li><a onClick="getPrevious()"><-previous</a></li>
+                    <li><a onClick="changeImage()">random</a></li>
+                    <li><a onClick="getNext()">next-></a></li>
+                </ul>
+            </header>
+            <article id="image-gallery">
+            </article>
         </div>
     </div>
     <footer>
         <div>validation</div>
         <div>&copy</div>
     </footer>
-
-    <script>
-        function RedirectSoftUni() {
-            window.location.replace("https://softuni.bg/");
-        }
-
-        function ShowOrHideMenu() {
-            var dropDown = document.getElementById('drop-down');
-            //Broken hover after the use;
-            var menu = document.getElementById('menu');
-
-            if (dropDown.style.display == 'block') {
-                dropDown.style.display = 'none';
-                menu.style.backgroundColor = 'transparent';
-                menu.style.color = '#fff';
-            } else {
-                dropDown.style.display = 'block';
-                menu.style.backgroundColor = '#fff';
-                menu.style.color = '#2A6496';
-            }
-        }
-
-        function CloseMenu() {
-            var dropDown = document.getElementById('drop-down');
-
-            if (dropDown.style.display == 'block') {
-                dropDown.style.display = 'none';
-                menu.style.backgroundColor = 'transparent';
-                menu.style.color = '#fff';
-            }
-        }
-    </script>
 </body>
 </html>
