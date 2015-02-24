@@ -9,7 +9,6 @@ body {
     margin: 0 auto;
 
     #main {
-        min-height: 700px;
         display: flex;
         flex-flow: row wrap;
 
@@ -29,6 +28,10 @@ body {
             flex-flow: column wrap;
             justify-content: center;
             align-items: center;
+
+            fieldset:first-of-type {
+                margin-top: 50px;
+            }
 
             fieldset {
                 background: rgba($mainColor, 0.7);
@@ -64,6 +67,7 @@ body {
                     margin: 5px 2px 10px 2px;
                     display: flex;
                     justify-content: center;
+
                     input[type="radio"] {
                         margin-left: 10px;
                     }
@@ -99,47 +103,5 @@ body {
         div:last-of-type {
             order: 2;
         }
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1599px) {
-    #main {
-        min-height: 600px;
-    }
-}
-
-@media screen and (min-width: 960px) and (max-width: 1023px) {
-    #main {
-        min-height: 550px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 959px) {
-    #main {
-        min-height: 450px;
-    }
-}
-
-@media screen and (min-width: 640px) and (max-width: 768px) {
-    #main {
-        min-height: 350px;
-    }
-}
-
-@media screen and (min-width: 640px) and (max-width: 768px) {
-    #main {
-        min-height: 350px;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 639px) {
-    #main {
-        min-height: 250px;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
-    #main {
-        min-height: 250px;
     }
 }
