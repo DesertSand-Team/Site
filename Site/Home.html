@@ -28,7 +28,7 @@
             </ul>
             <form class="search" role="search">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for..." />
+                    <input type="text" class="form-control" placeholder="Search for..." tabindex="7" />
                     <span class="input-group-btn">
                         <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     </span>
@@ -47,15 +47,34 @@
             </ul>
         </aside>
         <div id="content">
-            <article>
-                <p>
-                    Lorem ipsum dolor sit amet, vel id mazim nominavi, nec ne tacimates evertitur. Ullum soleat postea ex mea. Aperiri appellantur ad pro, adhuc eirmod neglegentur nec an. Eu aliquam elaboraret vel.
-                    Vel suas agam ex, has option eleifend delicatissimi no, ut est docendi lobortis. An solum sanctus quo, ad paulo dolore est. Verear suscipit eleifend at nam, id his tota invidunt. Et sit everti lucilius dissentiet,
-                    timeam equidem laboramus ei his, has ea simul moderatius scribentur. Graecis molestiae ea pro, partem volumus usu cu.
-                    Ex sea inani omnium appareat. Quod ubique utroque usu te, causae temporibus cu eum. Equidem legimus dissentiunt ex quo,
-                    in zril nonumy mei. Erat nostrud philosophia ius ex, est no dico iriure. Probo tritani ponderum et quo, eos veri splendide eu. Mel id quod dicant.
-                </p>
-            </article>
+            <div id="flex-container">
+                <form>
+                    <fieldset>
+                        <legend>Login?</legend>
+                        <input type="text" value="" placeholder="Username" required="required" tabindex="1" title="Username" />
+                        <input type="password" value="" placeholder="Password" required="required" tabindex="2" title="Password" />
+                        <input type="submit" value="Login" />
+                    </fieldset>
+                </form>
+                <form>
+                    <fieldset>
+                        <legend>Register?</legend>
+                        <input type="text" value="" placeholder="Username" required="required" tabindex="3" title="Only lower case and upper case letters are allowed" pattern="[a-zA-Z]+" />
+                        <input type="password" value="" placeholder="Password" required="required" tabindex="4" title="Password" />
+                        <input type="password" value="" placeholder="Password" required="required" tabindex="5" title="Password" />
+                        <input type="email" value="" placeholder="Email" required="required" tabindex="6" title="Email" />
+                        <div id="radio-buttons">
+                            <input type="radio" name="sex" value="Male" id="male" />
+                            <label for="male">Male</label>
+                            <input type="radio" value="Female" name="sex" id="female" />
+                            <label for="female">Female</label>
+                            <input type="radio" value="Other" name="sex" checked="checked" id="other" />
+                            <label for="other">Other</label>
+                        </div>
+                        <input type="submit" value="Register" />
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </div>
     <footer>
