@@ -3,10 +3,11 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
-    <link href="Styles/Home.css" type="text/css" rel="stylesheet" />
-    <script src="Scripts/scripts.js" type="text/javascript"></script>
+    <link href="Styles/contacts.css" type="text/css" rel="stylesheet" />
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="Scripts/googleMaps.js"></script>
+    <title>Contacts</title>
 </head>
 <body>
     <header id="main-header">
@@ -35,7 +36,6 @@
                 </div>
             </form>
         </nav>
-
     </header>
     <div id="main" onclick="CloseMenu()">
         <aside>
@@ -47,34 +47,14 @@
             </ul>
         </aside>
         <div id="content">
-            <div id="flex-container">
+            <div id="contact-us">
+                <label for="area">Tell us what you think!</label>
                 <form>
-                    <fieldset>
-                        <legend>Login?</legend>
-                        <input type="text" value="" placeholder="Username" required="required" tabindex="1" title="Username" />
-                        <input type="password" value="" placeholder="Password" required="required" tabindex="2" title="Password" />
-                        <input type="submit" value="Login" />
-                    </fieldset>
-                </form>
-                <form>
-                    <fieldset>
-                        <legend>Register?</legend>
-                        <input type="text" value="" placeholder="Username" required="required" tabindex="3" title="Only lower case and upper case letters are allowed" pattern="[a-zA-Z]+" />
-                        <input type="password" value="" placeholder="Password" required="required" tabindex="4" title="Password" />
-                        <input type="password" value="" placeholder="Password" required="required" tabindex="5" title="Password" />
-                        <input type="email" value="" placeholder="Email" required="required" tabindex="6" title="Email" />
-                        <div id="radio-buttons">
-                            <input type="radio" name="sex" value="Male" id="male" />
-                            <label for="male">Male</label>
-                            <input type="radio" value="Female" name="sex" id="female" />
-                            <label for="female">Female</label>
-                            <input type="radio" value="Other" name="sex" checked="checked" id="other" />
-                            <label for="other">Other</label>
-                        </div>
-                        <input type="submit" value="Register" />
-                    </fieldset>
+                    <textarea id="area" required></textarea>
+                    <input type="submit" value="Sent" />
                 </form>
             </div>
+            <div id="googleMap"></div>
         </div>
     </div>
     <footer>

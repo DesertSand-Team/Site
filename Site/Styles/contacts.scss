@@ -1,0 +1,98 @@
+@import "reset.css";
+@import "header.css";
+@import "aside.css";
+@import "main.scss";
+
+body {
+    //background: blue;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    #main {
+        display: flex;
+        flex-flow: row wrap;
+
+        aside {
+            //border: 1px solid red;
+            order: 1;
+            flex-grow: 1;
+            width: 10%;
+        }
+
+        #content {
+            order: 2;
+            flex-grow: 1;
+            width: 85%;
+
+            #contact-us {
+                margin: 15px 0;
+
+                label {
+                    display: block;
+                    padding: 15px;
+                    cursor: pointer;
+                }
+
+                form {
+                    display: flex;
+                    flex-flow: row wrap;
+
+                    textarea {
+                        width: 250px;
+                        height: 50px;
+                    }
+
+                    input {
+                        margin-left: 15px;
+                        height: 50px;
+                        width: 75px;
+                        background: $mainColor;
+                        border: 1px solid black;
+                        color: #fff;
+                        border-radius: 10px;
+
+                        &:hover {
+                            background: radial-gradient($mainColor, #1f4d74);
+                        }
+                    }
+                }
+            }
+
+            #googleMap {
+                width: 99%;
+                height: 500px;
+                margin: 5px 20px 0 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 365px) {
+    body {
+        #main {
+
+            #content {
+
+                #contact-us {
+                    form {
+                        flex-flow: column wrap;
+
+                        textarea {
+                            align-self: center;
+                        }
+
+                        input {
+                            margin-top: 10px;
+                            align-self: center;
+                        }
+                    }
+                }
+
+                #googleMap {
+                    width: 99%;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
