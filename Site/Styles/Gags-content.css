@@ -1,0 +1,76 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(aside.css);
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+body #main {
+    display: flex;
+    flex-flow: row wrap;
+}
+body #main aside {
+    order: 1;
+    flex-grow: 1;
+    width: 10%;
+}
+body #main #content {
+    order: 2;
+    flex-grow: 1;
+    width: 85%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+body #main #content header {
+    margin: 15px auto;
+}
+
+body #main #content header ul li {
+    display: inline-block;
+}
+
+body #main #content section {
+    margin: 15px auto;
+    width: 550px;
+    height: 350px;
+    border-left: 1px solid #83A5C2;
+    border-right: 1px solid #83A5C2;
+    display: flex;
+    flex-flow: column;
+}
+
+body #main #content section img {
+    margin: 0 auto;
+    width: 440px;
+    height: 340px;
+}
+
+@media screen and (max-width: 440px) {
+
+    body #main #content section {
+        margin: 15px auto;
+        width: 330px;
+        height: 300px;
+    }
+    body #main #content section img {
+        margin: 0 auto;
+        width: 330px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    body #main #content section {
+        margin: 15px auto;
+        width: 290px;
+        height: 270px;
+    }
+    body #main #content section img {
+        margin: 0 auto;
+        width: 290px;
+        height: 270px;
+    }
+}

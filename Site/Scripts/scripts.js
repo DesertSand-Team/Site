@@ -61,7 +61,7 @@ var globalIndex = 0;
 
 function changeImage() {
     globalIndex = Math.floor(Math.random() * messages.length);
-    var message = "<span>" + messages[globalIndex] + "</span><img src=\"Images/Gifs/" +
+    var message = "<p>" + messages[globalIndex] + "</p><img src=\"Images/Gifs/" +
         globalIndex + ".gif\"/>";
     document.getElementById("image-gallery").innerHTML = message;
 }
@@ -73,7 +73,7 @@ function getNext() {
     if (globalIndex > maxLength) {
         globalIndex = 0;
     }
-    var message = "<span>" + messages[globalIndex] + "</span><img src=\"Images/Gifs/" +
+    var message = "<p>" + messages[globalIndex] + "</p><img src=\"Images/Gifs/" +
         globalIndex + ".gif\"/>";
     document.getElementById("image-gallery").innerHTML = message;
 }
@@ -84,7 +84,7 @@ function getPrevious() {
     if (globalIndex < 0) {
         globalIndex = messages.length - 1;
     }
-    var message = "<span>" + messages[globalIndex] + "</span><img src=\"Images/Gifs/" +
+    var message = "<p>" + messages[globalIndex] + "<p><img src=\"Images/Gifs/" +
         globalIndex + ".gif\"/>";
     document.getElementById("image-gallery").innerHTML = message;
 }
