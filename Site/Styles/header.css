@@ -1,4 +1,8 @@
-﻿#main-header {
+﻿@font-face {
+  font-family: 'Sugar';
+  src: url("Fonts/give me some sugar_2.ttf"); }
+
+#main-header {
   font-size: 1rem;
   width: auto;
   height: 132px;
@@ -6,7 +10,8 @@
   flex-flow: column wrap;
   background: #2A6496;
   background: linear-gradient(to top, #2A6496, #fff);
-  border-bottom: 2px solid #fff; }
+  border-bottom: 2px solid #fff;
+  font-family: Sugar; }
   #main-header .logo {
     min-width: 100px;
     order: 1;

@@ -1,9 +1,14 @@
-﻿aside {
+﻿@font-face {
+  font-family: 'Sugar';
+  src: url("Fonts/give me some sugar_2.ttf"); }
+
+aside {
   background: #2A6496;
   background: linear-gradient(to right, #fff, #2A6496 25%, #2A6496);
   margin-right: 10px;
   min-width: 100px;
-  height: 150px; }
+  height: 150px;
+  font-family: Sugar; }
   aside ul li a {
     display: block;
     padding: 10px 0;
