@@ -13,16 +13,16 @@ function RedirectSoftUni() {
 function ShowOrHideMenu() {
     var dropDown = document.getElementById('drop-down');
     //Broken hover after the use;
-    //var menu = document.getElementById('menu');
+    var menu = document.getElementById('menu');
 
     if (dropDown.style.display == 'block') {
         dropDown.style.display = 'none';
-        //menu.style.backgroundColor = '#2A6496';
-        //menu.style.color = '#fff';
+        menu.style.backgroundColor = 'transparent';
+        menu.style.color = '#fff';
     } else {
         dropDown.style.display = 'block';
-        //menu.style.backgroundColor = '#fff';
-        //menu.style.color = '#2A6496';
+        menu.style.backgroundColor = '#fff';
+        menu.style.color = '#2A6496';
     }
 }
 
@@ -31,8 +31,8 @@ function CloseMenu() {
 
     if (dropDown.style.display == 'block') {
         dropDown.style.display = 'none';
-        //menu.style.backgroundColor = '#2A6496';
-        //menu.style.color = '#fff';
+        menu.style.backgroundColor = 'transparent';
+        menu.style.color = '#fff';
     }
 }
 
