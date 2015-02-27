@@ -1,0 +1,39 @@
+/*
+Error: Invalid CSS after "footer": expected "{", was ""
+        on line 3 of footer.scss
+
+1: @import "main.scss";
+2: 
+3: footer
+
+Backtrace:
+footer.scss:3
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/scss/parser.rb:1167:in `expected'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/scss/parser.rb:1101:in `expected'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/scss/parser.rb:1096:in `tok!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/scss/parser.rb:641:in `block'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/scss/parser.rb:636:in `ruleset'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/scss/parser.rb:660:in `block_child'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/scss/parser.rb:653:in `block_contents'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/scss/parser.rb:117:in `stylesheet'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/scss/parser.rb:42:in `parse'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/engine.rb:393:in `_to_tree'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.4.12/bin/scss:13:in `<top (required)>'
+C:/Ruby193/bin/scss:23:in `load'
+C:/Ruby193/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"footer\": expected \"{\", was \"\"\A         on line 3 of footer.scss\A \A 1: @import \"main.scss\";\A 2: \A 3: footer"; }

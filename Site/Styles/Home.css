@@ -1,6 +1,48 @@
-﻿@import url(reset.css);
+@import url(reset.css);
 @import url(header.css);
 @import url(aside.css);
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  height: 300px;
+  background-color: #2A6496; }
+  footer #upper-footer {
+    height: 200px;
+    background-color: #F6F4EC;
+    box-shadow: 0px -1px 1px 1px #aaa; }
+  footer #lower-footer {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-around; }
+    footer #lower-footer div {
+      display: flex;
+      flex-flow: column wrap;
+      color: #ffffff;
+      font-size: 0.75rem; }
+    footer #lower-footer #validation-footer {
+      justify-content: space-around; }
+    footer #lower-footer #logo-footer {
+      justify-content: center;
+      height: inherit; }
+      footer #lower-footer #logo-footer img {
+        margin: 0 auto;
+        width: 40px;
+        height: auto; }
+      footer #lower-footer #logo-footer p {
+        margin: 0 auto;
+        font-size: 1rem; }
+    footer #lower-footer #social-media {
+      width: 20%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around; }
+      footer #lower-footer #social-media input {
+        height: 45px;
+        align-self: center; }
+        footer #lower-footer #social-media input:focus {
+          outline: none; }
+
 body {
   max-width: 1600px;
   margin: 0 auto; }
@@ -62,10 +104,5 @@ body {
           font-size: 1.5rem; }
           body #main #content fieldset input[type="submit"]:hover {
             background: radial-gradient(#2A6496, #1f4d74); }
-  body footer {
-    display: flex;
-    flex-flow: row wrap; }
-    body footer div:first-of-type {
-      order: 1; }
-    body footer div:last-of-type {
-      order: 2; }
+
+/*# sourceMappingURL=Home.css.map */

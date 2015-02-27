@@ -1,0 +1,60 @@
+@import "main.scss";
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  height: 300px;
+  background-color: $mainColor;
+
+  #upper-footer{
+    height: 200px;
+    background-color: #F6F4EC;
+    box-shadow: 0px -1px 1px 1px #aaa;
+  }
+  #lower-footer{
+
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-around;
+    div{
+      display: flex;
+      flex-flow: column wrap;
+      color: #ffffff;
+      font-size: 0.75rem;
+
+    }
+    #validation-footer{
+      justify-content: space-around;
+
+    }
+
+    #logo-footer{
+      justify-content: center;
+//      width: 33%;
+      height: inherit;
+      img{
+        margin: 0 auto;
+        width: 40px;
+        height: auto;
+      }
+      p{
+        margin: 0 auto;
+        font-size: 1rem;
+      }
+    }
+    #social-media{
+      width: 20%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      input{
+        height: 45px;
+        align-self: center;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+  }
+}

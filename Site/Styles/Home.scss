@@ -2,6 +2,7 @@
 @import "header.css";
 @import "aside.css";
 @import "main.scss";
+@import "footer.scss";
 
 body {
     //background: red;
@@ -89,19 +90,6 @@ body {
                     }
                 }
             }
-        }
-    }
-
-    footer {
-        display: flex;
-        flex-flow: row wrap;
-
-        div:first-of-type {
-            order: 1;
-        }
-
-        div:last-of-type {
-            order: 2;
         }
     }
 }
