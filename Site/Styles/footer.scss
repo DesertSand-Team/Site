@@ -1,6 +1,10 @@
 @import "main.scss";
 
 footer {
+
+
+
+
   display: flex;
   flex-flow: column wrap;
   height: 300px;
@@ -31,7 +35,7 @@ footer {
 
     #logo-footer{
       justify-content: center;
-//      width: 33%;
+      width: 33%;
       height: inherit;
       img{
         margin: 0 auto;
@@ -48,13 +52,75 @@ footer {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-around;
-      input{
-        height: 45px;
-        align-self: center;
-        &:focus{
-          outline: none;
+
+      ul{
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        li{
+          align-self: center ;
+          width: 40px;
+          height: 40px;
+          a{
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        #fb-btn{
+          background: url("../Images/social%20media%20buttons/facebook_dark.png") no-repeat;
+          background-size: 40px;
+          &:hover{
+            background: url("../Images/social%20media%20buttons/facebook_active.png") no-repeat;
+            background-size: 40px;
+          }
+        }
+        #twitter-btn{
+          background: url("../Images/social%20media%20buttons/twitter02_dark.png") no-repeat;
+          background-size: 40px;
+          &:hover{
+            background: url("../Images/social%20media%20buttons/twitter02_active.png") no-repeat;
+            background-size: 40px;
+          }
+        }
+        #gplus-btn{
+          background: url("../Images/social%20media%20buttons/google_dark.png") no-repeat;
+          background-size: 40px;
+          &:hover{
+            background: url("../Images/social%20media%20buttons/google_active.png") no-repeat;
+            background-size: 40px;
+          }
+        }
+        #linkedin-btn{
+          background: url("../Images/social%20media%20buttons/in_dark.png") no-repeat;
+          background-size: 40px;
+          &:hover{
+            background: url("../Images/social%20media%20buttons/in_active.png") no-repeat;
+            background-size: 40px;
+          }
+        }
+        #tube-btn{
+          background: url("../Images/social%20media%20buttons/youtube_dark.png") no-repeat;
+          background-size: 40px;
+          &:hover{
+            background: url("../Images/social%20media%20buttons/youtube_active.png") no-repeat;
+            background-size: 40px;
+          }
         }
       }
+//      input{
+//        height: 45px;
+//        align-self: center;
+//        &:hover{
+//
+//        }
+//
+//        &:focus{
+//          outline: none;
+//        }
+//      }
     }
   }
 }
