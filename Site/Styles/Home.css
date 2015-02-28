@@ -1,33 +1,56 @@
 @import url(reset.css);
 @import url(header.css);
 @import url(aside.css);
+
+@font-face {
+    font-family: 'Sugar';
+    src: url("Fonts/give me some sugar_2.ttf");
+}
+
+@font-face {
+    font-family: 'Sugar';
+    src: url("Fonts/give me some sugar_2.ttf");
+}
+
 body footer {
-  display: flex;
-  flex-flow: column;
-  height: 300px; }
-  body footer #upper-container {
+    display: flex;
+    flex-flow: column;
+    height: 300px;
+}
+
+body footer #upper-container {
     height: 200px;
     background-color: #F6F4EC;
     box-shadow: 0px -1px 1px 1px #aaa;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
-    body footer #upper-container header {
-      align-self: center;
-      height: 10%;
-      color: #2A6496;
-      font-weight: bold; }
-    body footer #upper-container #upper-footer {
-      height: 84%;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around; }
-      body footer #upper-container #upper-footer div {
-        align-self: center; }
-        body footer #upper-container #upper-footer div img {
-          border-radius: 10px;
-          box-shadow: 2px 2px 2px #aaa; }
-  body footer #lower-footer {
+    justify-content: center;
+}
+
+body footer #upper-container header {
+    align-self: center;
+    height: 10%;
+    color: #2A6496;
+    font-weight: bold;
+}
+
+body footer #upper-container #upper-footer {
+    height: 84%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+body footer #upper-container #upper-footer div {
+    align-self: center;
+}
+
+body footer #upper-container #upper-footer div img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #aaa;
+}
+
+body footer #lower-footer {
     background-color: #2A6496;
     display: flex;
     flex-direction: row;
@@ -35,190 +58,284 @@ body footer {
     height: 100px;
     justify-content: space-around;
     font-size: 0.75rem;
-    color: #ffffff; }
-    body footer #lower-footer #validation-footer {
-      justify-content: space-around;
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center; }
-    body footer #lower-footer #logo-footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: inherit; }
-      body footer #lower-footer #logo-footer img {
-        margin: 0 auto;
-        width: 40px;
-        height: auto; }
-      body footer #lower-footer #logo-footer p {
-        margin: 0 auto;
-        font-size: 1rem; }
-    body footer #lower-footer #social-media {
-      width: auto;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around; }
-      body footer #lower-footer #social-media ul {
-        list-style-type: none;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center; }
-        body footer #lower-footer #social-media ul li {
-          display: block;
-          align-self: center;
-          width: 40px;
-          height: 40px; }
-          body footer #lower-footer #social-media ul li a {
-            display: block;
-            width: 100%;
-            height: 100%; }
-        body footer #lower-footer #social-media ul #fb-btn {
-          background: url("../Images/social%20media%20buttons/facebook_dark.png") no-repeat;
-          background-size: 40px; }
-          body footer #lower-footer #social-media ul #fb-btn:hover {
-            background: url("../Images/social%20media%20buttons/facebook_active.png") no-repeat;
-            background-size: 40px; }
-        body footer #lower-footer #social-media ul #twitter-btn {
-          background: url("../Images/social%20media%20buttons/twitter02_dark.png") no-repeat;
-          background-size: 40px; }
-          body footer #lower-footer #social-media ul #twitter-btn:hover {
-            background: url("../Images/social%20media%20buttons/twitter02_active.png") no-repeat;
-            background-size: 40px; }
-        body footer #lower-footer #social-media ul #gplus-btn {
-          background: url("../Images/social%20media%20buttons/google_dark.png") no-repeat;
-          background-size: 40px; }
-          body footer #lower-footer #social-media ul #gplus-btn:hover {
-            background: url("../Images/social%20media%20buttons/google_active.png") no-repeat;
-            background-size: 40px; }
-        body footer #lower-footer #social-media ul #linkedin-btn {
-          background: url("../Images/social%20media%20buttons/in_dark.png") no-repeat;
-          background-size: 40px; }
-          body footer #lower-footer #social-media ul #linkedin-btn:hover {
-            background: url("../Images/social%20media%20buttons/in_active.png") no-repeat;
-            background-size: 40px; }
-        body footer #lower-footer #social-media ul #tube-btn {
-          background: url("../Images/social%20media%20buttons/youtube_dark.png") no-repeat;
-          background-size: 40px; }
-          body footer #lower-footer #social-media ul #tube-btn:hover {
-            background: url("../Images/social%20media%20buttons/youtube_active.png") no-repeat;
-            background-size: 40px; }
+    color: #ffffff;
+}
+
+body footer #lower-footer #validation-footer {
+    justify-content: space-around;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+body footer #lower-footer #logo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+}
+
+body footer #lower-footer #logo-footer img {
+    margin: 0 auto;
+    width: 40px;
+    height: auto;
+}
+
+body footer #lower-footer #logo-footer p {
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+body footer #lower-footer #social-media {
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+body footer #lower-footer #social-media ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+body footer #lower-footer #social-media ul li {
+    display: block;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+}
+
+body footer #lower-footer #social-media ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+body footer #lower-footer #social-media ul #fb-btn {
+    background: url("../Images/social%20media%20buttons/facebook_dark.png") no-repeat;
+    background-size: 40px;
+}
+
+body footer #lower-footer #social-media ul #fb-btn:hover {
+    background: url("../Images/social%20media%20buttons/facebook_active.png") no-repeat;
+    background-size: 40px;
+}
+
+body footer #lower-footer #social-media ul #twitter-btn {
+    background: url("../Images/social%20media%20buttons/twitter02_dark.png") no-repeat;
+    background-size: 40px;
+}
+
+body footer #lower-footer #social-media ul #twitter-btn:hover {
+    background: url("../Images/social%20media%20buttons/twitter02_active.png") no-repeat;
+    background-size: 40px;
+}
+
+body footer #lower-footer #social-media ul #gplus-btn {
+    background: url("../Images/social%20media%20buttons/google_dark.png") no-repeat;
+    background-size: 40px;
+}
+
+body footer #lower-footer #social-media ul #gplus-btn:hover {
+    background: url("../Images/social%20media%20buttons/google_active.png") no-repeat;
+    background-size: 40px;
+}
+
+body footer #lower-footer #social-media ul #linkedin-btn {
+    background: url("../Images/social%20media%20buttons/in_dark.png") no-repeat;
+    background-size: 40px;
+}
+
+body footer #lower-footer #social-media ul #linkedin-btn:hover {
+    background: url("../Images/social%20media%20buttons/in_active.png") no-repeat;
+    background-size: 40px;
+}
+
+body footer #lower-footer #social-media ul #tube-btn {
+    background: url("../Images/social%20media%20buttons/youtube_dark.png") no-repeat;
+    background-size: 40px;
+}
+
+body footer #lower-footer #social-media ul #tube-btn:hover {
+    background: url("../Images/social%20media%20buttons/youtube_active.png") no-repeat;
+    background-size: 40px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 639px) {
-  body footer #upper-container {
-    height: 400px;
-    order: 1; }
-  body footer #lower-footer {
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100px;
-    justify-content: center; }
+    body footer #upper-container {
+        height: 400px;
+        order: 1;
+    }
+
+    body footer #lower-footer {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100px;
+        justify-content: center;
+    }
+
     body footer #lower-footer #validation-footer {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      order: 2; }
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        order: 2;
+    }
+
     body footer #lower-footer #logo-footer {
-      display: none; }
+        display: none;
+    }
+
     body footer #lower-footer #social-media {
-      align-self: center;
-      width: 100%;
-      order: 1; }
-      body footer #lower-footer #social-media ul {
-        width: 99%; } }
+        align-self: center;
+        width: 100%;
+        order: 1;
+    }
+
+    body footer #lower-footer #social-media ul {
+        width: 99%;
+    }
+}
+
 @media screen and (max-width: 330px) {
-  body footer #upper-container {
-    height: 400px;
-    order: 1; }
+    body footer #upper-container {
+        height: 400px;
+        order: 1;
+    }
+
     body footer #upper-container header {
-      height: 5%; }
+        height: 5%;
+    }
+
     body footer #upper-container #upper-footer > div {
-      width: 120px;
-      height: 120px; }
-      body footer #upper-container #upper-footer > div img {
+        width: 120px;
+        height: 120px;
+    }
+
+    body footer #upper-container #upper-footer > div img {
         max-width: 100%;
-        height: auto; }
-  body footer #lower-footer {
-    order: 2;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100px;
-    justify-content: center; }
+        height: auto;
+    }
+
+    body footer #lower-footer {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100px;
+        justify-content: center;
+    }
+
     body footer #lower-footer #validation-footer {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      order: 2; }
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        order: 2;
+    }
+
     body footer #lower-footer #logo-footer {
-      display: none; }
+        display: none;
+    }
+
     body footer #lower-footer #social-media {
-      align-self: center;
-      width: 100%;
-      order: 1; }
-      body footer #lower-footer #social-media ul {
-        width: 99%; } }
+        align-self: center;
+        width: 100%;
+        order: 1;
+    }
+
+    body footer #lower-footer #social-media ul {
+        width: 99%;
+    }
+}
 
 body {
-  max-width: 1600px;
-  margin: 0 auto; }
-  body #main {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body #main {
     display: flex;
-    flex-flow: row wrap; }
-    body #main aside {
-      order: 1;
-      flex-grow: 1;
-      width: 10%; }
-    body #main #content {
-      order: 2;
-      flex-grow: 1;
-      width: 85%;
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center; }
-      body #main #content fieldset:first-of-type {
-        margin-top: 50px; }
-      body #main #content fieldset {
-        background: rgba(42, 100, 150, 0.7);
-        border: 1px solid #2A6496;
-        border-radius: 5px;
-        margin-bottom: 70px;
-        padding: 20px; }
-        body #main #content fieldset legend {
-          background: #2A6496;
-          color: #fff;
-          padding: 5px;
-          text-align: center;
-          border-radius: 5px;
-          text-transform: uppercase; }
-        body #main #content fieldset input[type="text"], body #main #content fieldset input[type="email"], body #main #content fieldset input[type="password"] {
-          display: block;
-          padding: 5px 5px 5px 15px;
-          margin: 5px 2px;
-          border-radius: 4px;
-          outline: 0;
-          color: #2A6496;
-          border: 1px solid #000; }
-          body #main #content fieldset input[type="text"]:focus, body #main #content fieldset input[type="email"]:focus, body #main #content fieldset input[type="password"]:focus {
-            box-shadow: 10px 0 0 inset; }
-        body #main #content fieldset #radio-buttons {
-          margin: 5px 2px 10px 2px;
-          display: flex;
-          justify-content: center; }
-          body #main #content fieldset #radio-buttons input[type="radio"] {
-            margin-left: 10px; }
-        body #main #content fieldset input[type="submit"] {
-          display: block;
-          width: 50%;
-          margin: 0 25%;
-          padding: 10px 0;
-          border: 1px solid #000;
-          border-radius: 5px;
-          background: #2A6496;
-          color: #fff;
-          font-size: 1.5rem; }
-          body #main #content fieldset input[type="submit"]:hover {
-            background: radial-gradient(#2A6496, #1f4d74); }
+    flex-flow: row wrap;
+}
+
+body #main aside {
+    order: 1;
+    flex-grow: 1;
+    width: 10%;
+}
+
+body #main #content {
+    order: 2;
+    flex-grow: 1;
+    width: 85%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body #main #content fieldset:first-of-type {
+    margin-top: 50px;
+}
+
+body #main #content fieldset {
+    background: rgba(42, 100, 150, 0.7);
+    border: 1px solid #2A6496;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    padding: 20px;
+}
+
+body #main #content fieldset legend {
+    background: #2A6496;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+body #main #content fieldset input[type="text"], body #main #content fieldset input[type="email"], body #main #content fieldset input[type="password"] {
+    display: block;
+    padding: 5px 5px 5px 15px;
+    margin: 5px 2px;
+    border-radius: 4px;
+    outline: 0;
+    color: #2A6496;
+    border: 1px solid #000;
+}
+
+body #main #content fieldset input[type="text"]:focus, body #main #content fieldset input[type="email"]:focus, body #main #content fieldset input[type="password"]:focus {
+    box-shadow: 10px 0 0 inset;
+}
+
+body #main #content fieldset #radio-buttons {
+    margin: 5px 2px 10px 2px;
+    display: flex;
+    justify-content: center;
+}
+
+body #main #content fieldset #radio-buttons input[type="radio"] {
+    margin-left: 10px;
+}
+
+body #main #content fieldset input[type="submit"] {
+    display: block;
+    width: 50%;
+    margin: 0 25%;
+    padding: 10px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #2A6496;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+body #main #content fieldset input[type="submit"]:hover {
+    background: radial-gradient(#2A6496, #1f4d74);
+}
 
 /*# sourceMappingURL=Home.css.map */

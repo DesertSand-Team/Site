@@ -1,6 +1,9 @@
-﻿@import url(reset.css);
+@import url(reset.css);
 @import url(header.css);
 @import url(aside.css);
+@font-face {
+  font-family: 'Sugar';
+  src: url("Fonts/give me some sugar_2.ttf"); }
 body {
   max-width: 1600px;
   margin: 0 auto; }
@@ -52,7 +55,6 @@ body {
       align-self: center; }
   body #main #content #googleMap {
     width: 99%;
-    height: 200px; }
- }
+    height: 200px; } }
 
 /*# sourceMappingURL=contacts.css.map */

@@ -1,8 +1,8 @@
 @import "main.scss";
 
-body {
+body{
 
-  footer {
+  footer{
     display: flex;
     flex-flow: column;
     height: 300px;
@@ -195,10 +195,10 @@ body {
       #upper-container {
         height: 400px;
         order: 1;
-        header{
+        header {
           height: 5%;
         }
-        #upper-footer>div {
+        #upper-footer > div {
           width: 120px;
           height: 120px;
           img {
