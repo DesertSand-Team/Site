@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link href="Styles/Courses.css" type="text/css" rel="stylesheet" />
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <title>Courses</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo" onclick="RedirectSoftUni()"></div>
+        <nav>
+            <ul id="main-menu">
+                <li><a href="Home.html">home</a></li>
+                <li><a href="#">Content</a></li>
+                <li>
+                    <a id="menu" onclick="ShowOrHideMenu()">Content &#9662;</a>
+                    <ul id="drop-down">
+                        <li><a href="#">Content</a></li>
+                        <li><a href="#">Content</a></li>
+                        <li><a href="#">Content</a></li>
+                        <li><a href="#">Content</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contacts.html">Contacts</a></li>
+            </ul>
+            <form class="search" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for..." tabindex="7" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </span>
+                </div>
+            </form>
+        </nav>
+    </header>
+    <div id="main" onclick="CloseMenu()">
+        <aside>
+            <ul>
+                <li><a href="Home.html">content</a></li>
+                <li><a href="Home.html">content</a></li>
+                <li><a href="Gags.html">Gags</a></li>
+                <li><a href="The-Legend.html">The Legend</a></li>
+            </ul>
+        </aside>
+        <div id="content">
+            dafd
+        </div>
+    </div>
+    <footer>
+        <div>validation</div>
+        <div>&copy</div>
+    </footer>
+</body>
+</html>

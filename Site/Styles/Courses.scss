@@ -1,0 +1,31 @@
+@import "reset.css";
+@import "header.css";
+@import "aside.css";
+@import "main.scss";
+@import "footer.scss";
+
+body {
+    //background: red;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    #main {
+        display: flex;
+        flex-flow: row wrap;
+
+        aside {
+            //border: 1px solid red;
+            order: 1;
+            flex-grow: 1;
+            width: 10%;
+        }
+
+        #content {
+            //border: 1px solid red;
+            order: 2;
+            flex-grow: 1;
+            width: 85%;
+            
+        }
+    }
+}
