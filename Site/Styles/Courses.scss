@@ -25,7 +25,80 @@ body {
             order: 2;
             flex-grow: 1;
             width: 85%;
-            
+
+            .bugs {
+                width: 80%;
+                margin: 20px 10%;
+
+                @media screen and (max-width: 740px) {
+                    width: 90%;
+                    margin: 20px 5%;
+                }
+            }
+
+            article {
+                border: 1px solid $mainColor;
+                border-radius: 5px;
+                width: 80%;
+                margin: 20px 10%;
+
+                @media screen and (max-width: 740px) {
+                    width: 90%;
+                    margin: 20px 5%;
+                }
+
+                h1 {
+                    font-family: Sugar;
+                    font-size: 3rem;
+                    text-align: center;
+                    padding: 5px 0;
+                }
+
+                img {
+                    float: left;
+                    width: 150px;
+                    margin: 5px 10px 5px 0;
+                    cursor: pointer;
+                    transition: all 2s;
+
+                    &:hover {
+                        width: 300px;
+                        background: $mainColor;
+
+                        @media screen and (max-width: 400px) {
+                            width: 150px;
+                        }
+                    }
+
+                    @media screen and (max-width: 300px) {
+                        width: 200px;
+                        margin-left: 25px;
+
+                        &:hover {
+                            width: 200px;
+                        }
+                    }
+                }
+
+                div {
+                    text-align: justify;
+                    font-size: 1rem;
+                    padding: 5px;
+                    line-height: 150%;
+                    text-indent: 50px;
+
+                    &:first-letter {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                &:after {
+                    content: "";
+                    height: 0;
+                    clear: both;
+                    display: block;
+                }
+            }
         }
     }
 }
