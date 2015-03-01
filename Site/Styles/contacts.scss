@@ -2,6 +2,7 @@
 @import "header.css";
 @import "aside.css";
 @import "main.scss";
+@import "footer.scss";
 
 body {
     //background: blue;
@@ -23,6 +24,7 @@ body {
             order: 2;
             flex-grow: 1;
             width: 85%;
+            margin-bottom: 20px;
 
             #contact-us {
                 margin: 15px 0;
