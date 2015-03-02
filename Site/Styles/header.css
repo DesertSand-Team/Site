@@ -241,7 +241,8 @@ body footer {
 @media screen and (min-width: 640px) and (max-width: 768px) {
   #main-header {
     position: fixed;
-    width: 100%; }
+    width: 100%;
+    z-index: 1; }
     #main-header nav #main-menu li #menu {
       display: block; }
     #main-header nav .search {
@@ -254,7 +255,8 @@ body footer {
     height: 185px;
     padding-bottom: 5px;
     position: fixed;
-    width: 100%; }
+    width: 100%;
+    z-index: 1; }
     #main-header .logo {
       background-position: 50% 50%; }
     #main-header nav {

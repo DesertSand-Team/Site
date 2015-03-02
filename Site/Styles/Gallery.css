@@ -204,6 +204,8 @@ body {
       flex-flow: row wrap;
       justify-content: space-around; }
       body #main #content img {
+        width: 250px;
+        height: 150px;
         border: 1px solid #2A6496;
         border-radius: 4px;
         margin: 20px;
