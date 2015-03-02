@@ -28,6 +28,8 @@ body footer {
       body footer #upper-container #upper-footer div {
         align-self: center; }
         body footer #upper-container #upper-footer div img {
+          width: 154px;
+          height: 154px;
           border-radius: 10px;
           box-shadow: 2px 2px 2px #aaa; }
   body footer #lower-footer {
@@ -139,7 +141,7 @@ body footer {
       width: 120px;
       height: 120px; }
       body footer #upper-container #upper-footer > div img {
-        max-width: 100%;
+        width: 100%;
         height: auto; }
   body footer #lower-footer {
     order: 2;

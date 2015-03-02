@@ -29,6 +29,8 @@ body{
         div {
           align-self: center;
           img {
+            width: 154px;
+            height: 154px;
             border-radius: 10px;
             box-shadow: 2px 2px 2px #aaa;
           }
@@ -202,7 +204,7 @@ body{
           width: 120px;
           height: 120px;
           img {
-            max-width: 100%;
+            width: 100%;
             height: auto;
           }
         }

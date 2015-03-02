@@ -1,14 +1,12 @@
-﻿@import url(reset.css);
+@import url(reset.css);
 @import url(header.css);
 @import url(aside.css);
 @font-face {
   font-family: 'Sugar';
   src: url("Fonts/give me some sugar_2.ttf"); }
-
 @font-face {
   font-family: 'Sugar';
   src: url("Fonts/give me some sugar_2.ttf"); }
-
 body footer {
   display: flex;
   flex-flow: column;
@@ -33,6 +31,8 @@ body footer {
       body footer #upper-container #upper-footer div {
         align-self: center; }
         body footer #upper-container #upper-footer div img {
+          width: 154px;
+          height: 154px;
           border-radius: 10px;
           box-shadow: 2px 2px 2px #aaa; }
   body footer #lower-footer {
@@ -133,8 +133,7 @@ body footer {
       width: 100%;
       order: 1; }
       body footer #lower-footer #social-media ul {
-        width: 99%; }
- }
+        width: 99%; } }
 @media screen and (max-width: 330px) {
   body footer #upper-container {
     height: 400px;
@@ -145,7 +144,7 @@ body footer {
       width: 120px;
       height: 120px; }
       body footer #upper-container #upper-footer > div img {
-        max-width: 100%;
+        width: 100%;
         height: auto; }
   body footer #lower-footer {
     order: 2;
@@ -166,8 +165,7 @@ body footer {
       width: 100%;
       order: 1; }
       body footer #lower-footer #social-media ul {
-        width: 99%; }
- }
+        width: 99%; } }
 
 body {
   max-width: 1600px;
@@ -234,3 +232,5 @@ body {
           font-size: 1.5rem; }
           body #main #content fieldset input[type="submit"]:hover {
             background: radial-gradient(#2A6496, #1f4d74); }
+
+/*# sourceMappingURL=Home.css.map */
