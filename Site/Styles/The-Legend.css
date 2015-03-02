@@ -1,7 +1,28 @@
 h2 {
     text-align: center;
-    font-size: 2em;
+    font-size:3em;
+    font-style: italic;
+    margin: 1em;
 }
 p {
-    margin: 0.5em;
+    margin:1em;
+    font-size: 1.2em;
+}
+article {
+    margin: 1em;
+    margin-left: 20em;
+    padding: 1em;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+aside {
+    position: fixed;
+    height: auto;
+}
+.center {
+    text-align: center;
+}
+.center > img {
+    max-width: 50%;
+    height: auto;
 }
