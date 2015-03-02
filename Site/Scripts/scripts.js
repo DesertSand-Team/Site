@@ -1,7 +1,8 @@
 /* Contains scripts for:
     1. Dropdown menus.
     2. Gifs visualisation and messages
-    3. to do : ) (delete this row if nothing more is added)
+    3. Added jquery to load images in gallery
+    4. to do : ) (delete this row if nothing more is added)
  */
 
 /* dropdown menu */
@@ -88,3 +89,23 @@ function getPrevious() {
         globalIndex + ".gif\"/>";
     document.getElementById("image-gallery").innerHTML = message;
 }
+
+//Jquery for fancybox
+$(function($){
+    var addToAll = false;
+    var gallery = true;
+    var titlePosition = 'inside';
+    $(addToAll ? 'img' : 'img.fancybox').each(function(){
+        var $this = $(this);
+        var title = $this.attr('title');
+        var src = $this.attr('data-big') || $this.attr('src');
+        var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+        $this.wrap(a);
+    });
+    if (gallery)
+        $('a.fancybox').attr('rel', 'fancyboxgallery');
+    $('a.fancybox').fancybox({
+        titlePosition: titlePosition
+    });
+});
+$.noConflict();

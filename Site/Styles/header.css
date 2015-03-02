@@ -1,11 +1,9 @@
-﻿@font-face {
-  font-family: 'Sugar';
-  src: url("Fonts/give me some sugar_2.ttf"); }
-
 @font-face {
   font-family: 'Sugar';
   src: url("Fonts/give me some sugar_2.ttf"); }
-
+@font-face {
+  font-family: 'Sugar';
+  src: url("Fonts/give me some sugar_2.ttf"); }
 body footer {
   display: flex;
   flex-flow: column;
@@ -130,8 +128,7 @@ body footer {
       width: 100%;
       order: 1; }
       body footer #lower-footer #social-media ul {
-        width: 99%; }
- }
+        width: 99%; } }
 @media screen and (max-width: 330px) {
   body footer #upper-container {
     height: 400px;
@@ -163,8 +160,7 @@ body footer {
       width: 100%;
       order: 1; }
       body footer #lower-footer #social-media ul {
-        width: 99%; }
- }
+        width: 99%; } }
 
 #main-header {
   font-size: 1rem;
@@ -252,9 +248,7 @@ body footer {
       align-self: center; }
 
   #content {
-    margin-top: 132px; }
- }
-
+    margin-top: 132px; } }
 @media screen and (min-width: 480px) and (max-width: 639px) {
   #main-header {
     height: 185px;
@@ -292,15 +286,14 @@ body footer {
         align-self: center; }
 
   #content {
-    margin-top: 185px; }
- }
-
+    margin-top: 185px; } }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   #main-header {
     height: 185px;
     padding-bottom: 5px;
     position: fixed;
-    width: 100%; }
+    width: 100%;
+    z-index: 1; }
     #main-header .logo {
       background-position: 50% 50%; }
     #main-header nav {
@@ -332,9 +325,7 @@ body footer {
         align-self: center; }
 
   #content {
-    margin-top: 185px; }
- }
-
+    margin-top: 185px; } }
 @media screen and (max-width: 319px) {
   #main-header {
     height: 185px;
@@ -369,5 +360,6 @@ body footer {
               width: 150px; }
       #main-header nav .search {
         width: 100%;
-        align-self: center; }
- }
+        align-self: center; } }
+
+/*# sourceMappingURL=header.css.map */

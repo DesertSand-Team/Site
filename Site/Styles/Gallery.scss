@@ -5,45 +5,74 @@
 @import "footer.scss";
 
 body {
-    //background: red;
-    max-width: 1600px;
-    margin: 0 auto;
+  //background: red;
+  max-width: 1600px;
+  margin: 0 auto;
 
-    #main {
-        display: flex;
-        flex-flow: row wrap;
 
-        aside {
-            //border: 1px solid red;
-            order: 1;
-            flex-grow: 1;
-            width: 10%;
-        }
+  //Added galley with fancybox
+  //http://www.dwuser.com/education/content/click-to-zoom-for-photos-adding-lightbox-effect-to-your-images/
+  a.fancybox img {
+    border: none;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  a.fancybox:hover img {
+    position: relative;
+    z-index: 999;
+    -o-transform: scale(1.03, 1.03);
+    -ms-transform: scale(1.03, 1.03);
+    -moz-transform: scale(1.03, 1.03);
+    -webkit-transform: scale(1.03, 1.03);
+    transform: scale(1.03, 1.03);
+  }
 
-        #content {
-            //border: 1px solid red;
-            order: 2;
-            flex-grow: 1;
-            width: 85%;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
+  //Fancybox
 
-            img {
-                //display: inline-block;
-                border: 1px solid $mainColor;
-                border-radius: 4px;
-                margin: 20px;
-                transition: all 4s;
-                @media screen and (min-width: 500px) and (max-width: 600px) {
-                    width: 200px;
-                }
+  #main {
+    display: flex;
+    flex-flow: row wrap;
 
-                &:hover {
-                    border: 1px solid darken($mainColor, 20%);
-                    cursor: help;
-                }
-            }
-        }
+    aside {
+      //border: 1px solid red;
+      order: 1;
+      flex-grow: 1;
+      width: 10%;
     }
+
+    #content {
+      //border: 1px solid red;
+      order: 2;
+      flex-grow: 1;
+      width: 85%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+
+      img {
+        //display: inline-block;
+        border: 1px solid $mainColor;
+        border-radius: 4px;
+        margin: 20px;
+        transition: all 4s;
+        @media screen and (min-width: 500px) and (max-width: 600px) {
+          width: 200px;
+        }
+
+        &:hover {
+          border: 1px solid darken($mainColor, 20%);
+          cursor: help;
+        }
+      }
+    }
+  }
 }

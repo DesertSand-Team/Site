@@ -1,14 +1,12 @@
-﻿@import url(reset.css);
+@import url(reset.css);
 @import url(header.css);
 @import url(aside.css);
 @font-face {
   font-family: 'Sugar';
   src: url("Fonts/give me some sugar_2.ttf"); }
-
 @font-face {
   font-family: 'Sugar';
   src: url("Fonts/give me some sugar_2.ttf"); }
-
 body footer {
   display: flex;
   flex-flow: column;
@@ -133,8 +131,7 @@ body footer {
       width: 100%;
       order: 1; }
       body footer #lower-footer #social-media ul {
-        width: 99%; }
- }
+        width: 99%; } }
 @media screen and (max-width: 330px) {
   body footer #upper-container {
     height: 400px;
@@ -166,12 +163,32 @@ body footer {
       width: 100%;
       order: 1; }
       body footer #lower-footer #social-media ul {
-        width: 99%; }
- }
+        width: 99%; } }
 
 body {
   max-width: 1600px;
   margin: 0 auto; }
+  body a.fancybox img {
+    border: none;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  body a.fancybox:hover img {
+    position: relative;
+    z-index: 999;
+    -o-transform: scale(1.03, 1.03);
+    -ms-transform: scale(1.03, 1.03);
+    -moz-transform: scale(1.03, 1.03);
+    -webkit-transform: scale(1.03, 1.03);
+    transform: scale(1.03, 1.03); }
   body #main {
     display: flex;
     flex-flow: row wrap; }
@@ -197,3 +214,5 @@ body {
         body #main #content img:hover {
           border: 1px solid #142f46;
           cursor: help; }
+
+/*# sourceMappingURL=Gallery.css.map */
