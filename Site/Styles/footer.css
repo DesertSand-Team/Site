@@ -13,7 +13,7 @@ body footer {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    body footer #upper-container header {
+    body footer #upper-container h3 {
       align-self: center;
       height: 10%;
       color: #2A6496;
@@ -134,7 +134,7 @@ body footer {
   body footer #upper-container {
     height: 400px;
     order: 1; }
-    body footer #upper-container header {
+    body footer #upper-container h3 {
       height: 5%; }
     body footer #upper-container #upper-footer > div {
       width: 120px;

@@ -15,7 +15,7 @@ body {
             flex-direction: column;
             justify-content: center;
 
-            header {
+            h3 {
                 align-self: center;
                 height: 10%;
                 color: $mainColor;
@@ -169,7 +169,7 @@ body {
         }
     }
 
-    @media screen and (min-width: 320px) and(max-width: 639px) {
+    @media screen and (min-width: 320px) and (max-width: 639px) {
         footer {
             #upper-container {
                 height: 400px;
@@ -217,7 +217,7 @@ body {
                 height: 400px;
                 order: 1;
 
-                header {
+                h3 {
                     height: 5%;
                 }
 
