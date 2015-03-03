@@ -1,244 +1,269 @@
 @import "main.scss";
 
-body{
+body {
 
-  footer{
-    display: flex;
-    flex-flow: column;
-    height: 300px;
-    //    background-color: $mainColor;
-
-    #upper-container {
-      height: 200px;
-      background-color: #F6F4EC;
-      box-shadow: 0px -1px 1px 1px #aaa;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      header{
-        align-self: center;
-        height: 10%;
-        color: $mainColor;
-        font-weight: bold;
-      }
-      #upper-footer {
-        height: 84%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        div {
-          align-self: center;
-          img {
-            width: 154px;
-            height: 154px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 2px #aaa;
-          }
-        }
-      }
-
-    }
-
-
-    #lower-footer {
-      background-color: $mainColor;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      height: 100px;
-      justify-content: space-around;
-      font-size: 0.75rem;
-      color: #ffffff;
-
-      #validation-footer {
-        justify-content: space-around;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-      }
-
-      #logo-footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        //      width: 33%;
-        height: inherit;
-        img {
-          margin: 0 auto;
-          width: 40px;
-          height: auto;
-        }
-        p {
-          margin: 0 auto;
-          font-size: 1rem;
-        }
-      }
-      #social-media {
-        width: auto;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-
-        ul {
-          list-style-type: none;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: center;
-          //        width: 100%;
-          li {
-            //          flex-grow: 1;
-            display: block;
-            align-self: center;
-            width: 40px;
-            height: 40px;
-            a {
-              display: block;
-              width: 100%;
-              height: 100%;
-            }
-          }
-          #fb-btn {
-            background: url("../Images/social%20media%20buttons/facebook_dark.png") no-repeat;
-            background-size: 40px;
-            &:hover {
-              background: url("../Images/social%20media%20buttons/facebook_active.png") no-repeat;
-              background-size: 40px;
-            }
-          }
-          #twitter-btn {
-            background: url("../Images/social%20media%20buttons/twitter02_dark.png") no-repeat;
-            background-size: 40px;
-            &:hover {
-              background: url("../Images/social%20media%20buttons/twitter02_active.png") no-repeat;
-              background-size: 40px;
-            }
-          }
-          #gplus-btn {
-            background: url("../Images/social%20media%20buttons/google_dark.png") no-repeat;
-            background-size: 40px;
-            &:hover {
-              background: url("../Images/social%20media%20buttons/google_active.png") no-repeat;
-              background-size: 40px;
-            }
-          }
-          #linkedin-btn {
-            background: url("../Images/social%20media%20buttons/in_dark.png") no-repeat;
-            background-size: 40px;
-            &:hover {
-              background: url("../Images/social%20media%20buttons/in_active.png") no-repeat;
-              background-size: 40px;
-            }
-          }
-          #tube-btn {
-            background: url("../Images/social%20media%20buttons/youtube_dark.png") no-repeat;
-            background-size: 40px;
-            &:hover {
-              background: url("../Images/social%20media%20buttons/youtube_active.png") no-repeat;
-              background-size: 40px;
-            }
-          }
-        }
-        //      input{
-        //        height: 45px;
-        //        align-self: center;
-        //        &:hover{
-        //
-        //        }
-        //
-        //        &:focus{
-        //          outline: none;
-        //        }
-        //      }
-      }
-    }
-  }
-
-  @media screen and (min-width: 320px) and(max-width: 639px) {
     footer {
-      #upper-container {
-        height: 400px;
-        order: 1;
-      }
-      #lower-footer {
-        //        background-color: $mainColor;
-        order: 2;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 100px;
-        justify-content: center;
+        flex-flow: column;
+        height: 300px;
+        //background-color: $mainColor;
+        #upper-container {
+            height: 200px;
+            background-color: #F6F4EC;
+            box-shadow: 0px -1px 1px 1px #aaa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-        #validation-footer {
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-          order: 2;
+            header {
+                align-self: center;
+                height: 10%;
+                color: $mainColor;
+                font-weight: bold;
+            }
+
+            #upper-footer {
+                height: 84%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+
+                div {
+                    align-self: center;
+
+                    img {
+                        width: 154px;
+                        height: 154px;
+                        border-radius: 10px;
+                        box-shadow: 2px 2px 2px #aaa;
+                    }
+                }
+            }
         }
 
-        #logo-footer {
-          display: none;
+
+        #lower-footer {
+            background-color: $mainColor;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 100px;
+            justify-content: space-around;
+            font-size: 0.75rem;
+            color: #ffffff;
+
+            #validation-footer {
+                justify-content: space-around;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+            }
+
+            #logo-footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                //width: 33%;
+                height: inherit;
+
+                img {
+                    margin: 0 auto;
+                    width: 40px;
+                    height: auto;
+                }
+
+                p {
+                    margin: 0 auto;
+                    font-size: 1rem;
+                }
+            }
+
+            #social-media {
+                width: auto;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    //width: 100%;
+                    li {
+                        //flex-grow: 1;
+                        display: block;
+                        align-self: center;
+                        width: 40px;
+                        height: 40px;
+
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    #fb-btn {
+                        background: url("../Images/social%20media%20buttons/facebook_dark.png") no-repeat;
+                        background-size: 40px;
+
+                        &:hover {
+                            background: url("../Images/social%20media%20buttons/facebook_active.png") no-repeat;
+                            background-size: 40px;
+                        }
+                    }
+
+                    #twitter-btn {
+                        background: url("../Images/social%20media%20buttons/twitter02_dark.png") no-repeat;
+                        background-size: 40px;
+
+                        &:hover {
+                            background: url("../Images/social%20media%20buttons/twitter02_active.png") no-repeat;
+                            background-size: 40px;
+                        }
+                    }
+
+                    #gplus-btn {
+                        background: url("../Images/social%20media%20buttons/google_dark.png") no-repeat;
+                        background-size: 40px;
+
+                        &:hover {
+                            background: url("../Images/social%20media%20buttons/google_active.png") no-repeat;
+                            background-size: 40px;
+                        }
+                    }
+
+                    #linkedin-btn {
+                        background: url("../Images/social%20media%20buttons/in_dark.png") no-repeat;
+                        background-size: 40px;
+
+                        &:hover {
+                            background: url("../Images/social%20media%20buttons/in_active.png") no-repeat;
+                            background-size: 40px;
+                        }
+                    }
+
+                    #tube-btn {
+                        background: url("../Images/social%20media%20buttons/youtube_dark.png") no-repeat;
+                        background-size: 40px;
+
+                        &:hover {
+                            background: url("../Images/social%20media%20buttons/youtube_active.png") no-repeat;
+                            background-size: 40px;
+                        }
+                    }
+                }
+                //      input{
+                //        height: 45px;
+                //        align-self: center;
+                //        &:hover{
+                //
+                //        }
+                //
+                //        &:focus{
+                //          outline: none;
+                //        }
+                //      }
+            }
         }
-        #social-media {
-          align-self: center;
-          width: 100%;
-          order: 1;
-          ul {
-            //Uf you want to be space-around or space-between you should use inherit and give value to the social-media container
-            //          justify-content: inherit;
-            width: 99%;
-          }
-        }
-      }
     }
-  }
 
-  @media screen and (max-width: 330px) {
-    footer {
-      #upper-container {
-        height: 400px;
-        order: 1;
-        header {
-          height: 5%;
-        }
-        #upper-footer > div {
-          width: 120px;
-          height: 120px;
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-      #lower-footer {
-        //        background-color: $mainColor;
-        order: 2;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 100px;
-        justify-content: center;
+    @media screen and (min-width: 320px) and(max-width: 639px) {
+        footer {
+            #upper-container {
+                height: 400px;
+                order: 1;
+            }
 
-        #validation-footer {
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-          order: 2;
-        }
+            #lower-footer {
+                //        background-color: $mainColor;
+                order: 2;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 100px;
+                justify-content: center;
 
-        #logo-footer {
-          display: none;
+                #validation-footer {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    order: 2;
+                }
+
+                #logo-footer {
+                    display: none;
+                }
+
+                #social-media {
+                    align-self: center;
+                    width: 100%;
+                    order: 1;
+
+                    ul {
+                        //If you want to be space-around or space-between you should use inherit and give value to the social-media container
+                        //justify-content: inherit;
+                        width: 99%;
+                    }
+                }
+            }
         }
-        #social-media {
-          align-self: center;
-          width: 100%;
-          order: 1;
-          ul {
-            //Uf you want to be space-around or space-between you should use inherit and give value to the social-media container
-            //          justify-content: inherit;
-            width: 99%;
-          }
-        }
-      }
     }
-  }
+
+    @media screen and (max-width: 330px) {
+        footer {
+            #upper-container {
+                height: 400px;
+                order: 1;
+
+                header {
+                    height: 5%;
+                }
+
+                #upper-footer > div {
+                    width: 120px;
+                    height: 120px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            #lower-footer {
+                //        background-color: $mainColor;
+                order: 2;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 100px;
+                justify-content: center;
+
+                #validation-footer {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    order: 2;
+                }
+
+                #logo-footer {
+                    display: none;
+                }
+
+                #social-media {
+                    align-self: center;
+                    width: 100%;
+                    order: 1;
+
+                    ul {
+                        //If you want to be space-around or space-between you should use inherit and give value to the social-media container
+                        //justify-content: inherit;
+                        width: 99%;
+                    }
+                }
+            }
+        }
+    }
 }

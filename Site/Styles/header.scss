@@ -1,5 +1,4 @@
 @import "main.scss";
-@import "footer.scss";
 
 #main-header {
     font-size: 1rem;
@@ -120,7 +119,7 @@
     #main-header {
         position: fixed;
         width: 100%;
-      z-index: 1;
+        z-index: 1;
 
         nav {
             #main-menu {

@@ -1,28 +1,102 @@
-h2 {
-    text-align: center;
-    font-size:3em;
-    font-style: italic;
-    margin: 1em;
+@import "reset.css";
+@import "header.css";
+@import "aside.css";
+@import "footer.css";
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
 }
-p {
-    margin:1em;
-    font-size: 1.2em;
+
+#main-header nav #main-menu li #menu {
+    display: block;
 }
-article {
-    margin: 1em;
-    margin-left: 20em;
-    padding: 1em;
-    border: 1px solid blue;
-    border-radius: 10px;
-}
+
 aside {
     position: fixed;
     height: auto;
+    width: 150px;
 }
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+    margin: 1em;
+}
+
+p {
+    margin: 1em;
+    font-size: 1.2em;
+    text-indent: 50px;
+}
+
+article {
+    margin: 1em;
+    padding: 1em;
+    margin-left: 160px;
+    border: 1px solid #2A6496;
+    border-radius: 10px;
+    text-align: justify;
+}
+
 .center {
     text-align: center;
 }
-.center > img {
-    max-width: 50%;
-    height: auto;
+
+    .center > img {
+        max-width: 50%;
+        height: auto;
+    }
+
+
+@media screen and (max-width: 770px) {
+    #main-header {
+        position: static;
+    }
+
+    #content {
+        margin-top: 5px;
+    }
+
+    .center > img {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    aside {
+        display: block;
+        width: 120px;
+    }
+
+    h2 {
+        margin: 10px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 1em;
+        text-indent: 30px;
+    }
+
+    article {
+        margin-left: 130px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    article {
+        margin-left: 1em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #2A6496;
+    }
+
+    aside {
+        display: none;
+    }
 }
