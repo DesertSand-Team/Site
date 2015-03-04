@@ -3,6 +3,7 @@
 @import "aside.css";
 @import "footer.css";
 
+
 body {
     max-width: 1600px;
     margin: 0 auto;
@@ -25,7 +26,7 @@ h2 {
     margin: 1em;
 }
 
-p {
+article p {
     margin: 1em;
     font-size: 1.2em;
     text-indent: 50px;
