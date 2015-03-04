@@ -1,7 +1,6 @@
-﻿@font-face {
+@font-face {
   font-family: 'Sugar';
   src: url("Fonts/give me some sugar_2.ttf"); }
-
 body footer {
   display: flex;
   flex-flow: column;
@@ -128,8 +127,7 @@ body footer {
       width: 100%;
       order: 1; }
       body footer #lower-footer #social-media ul {
-        width: 99%; }
- }
+        width: 99%; } }
 @media screen and (max-width: 330px) {
   body footer #upper-container {
     height: 400px;
@@ -161,5 +159,6 @@ body footer {
       width: 100%;
       order: 1; }
       body footer #lower-footer #social-media ul {
-        width: 99%; }
- }
+        width: 99%; } }
+
+/*# sourceMappingURL=footer.css.map */
