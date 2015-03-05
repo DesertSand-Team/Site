@@ -28,7 +28,7 @@ body {
             width: 90%;
             margin: 20px 5%; } }
       body #main #content article {
-        border: 1px solid #2A6496;
+        border: 1px solid red;
         border-radius: 5px;
         width: 80%;
         margin: 20px 10%; }
@@ -49,7 +49,7 @@ body {
           transition: all 2s; }
           body #main #content article img:hover {
             width: 300px;
-            background: #2A6496; }
+            background: red; }
             @media screen and (max-width: 400px) {
               body #main #content article img:hover {
                 width: 150px; } }
@@ -72,3 +72,5 @@ body {
           height: 0;
           clear: both;
           display: block; }
+
+/*# sourceMappingURL=Courses.css.map */

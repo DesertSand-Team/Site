@@ -40,12 +40,12 @@ body {
             margin-left: 15px;
             height: 50px;
             width: 75px;
-            background: #2A6496;
+            background: red;
             border: 1px solid black;
             color: #fff;
             border-radius: 10px; }
             body #main #content #contact-us form input:hover {
-              background: radial-gradient(#2A6496, #1f4d74); }
+              background: radial-gradient(red, #1f4d74); }
       body #main #content #googleMap {
         width: 99%;
         height: 500px;

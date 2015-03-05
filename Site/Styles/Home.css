@@ -19,7 +19,10 @@ body {
     body #main .alert-info {
       margin-top: 2px;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      background: #ff1a1a;
+      color: #fff;
+      border: none; }
     body #main #content {
       order: 2;
       flex-grow: 1;
@@ -31,13 +34,13 @@ body {
       body #main #content fieldset:first-of-type {
         margin-top: 50px; }
       body #main #content fieldset {
-        background: rgba(42, 100, 150, 0.7);
-        border: 1px solid #2A6496;
+        background: rgba(255, 0, 0, 0.7);
+        border: 1px solid red;
         border-radius: 5px;
         margin-bottom: 70px;
         padding: 20px; }
         body #main #content fieldset legend {
-          background: #2A6496;
+          background: red;
           color: #fff;
           padding: 5px;
           text-align: center;
@@ -49,7 +52,7 @@ body {
           margin: 5px 2px;
           border-radius: 4px;
           outline: 0;
-          color: #2A6496;
+          color: red;
           border: 1px solid #000; }
           body #main #content fieldset input[type="text"]:focus, body #main #content fieldset input[type="email"]:focus, body #main #content fieldset input[type="password"]:focus {
             box-shadow: 10px 0 0 inset; }
@@ -66,8 +69,10 @@ body {
           padding: 10px 0;
           border: 1px solid #000;
           border-radius: 5px;
-          background: #2A6496;
+          background: red;
           color: #fff;
           font-size: 1.5rem; }
           body #main #content fieldset input[type="submit"]:hover {
-            background: radial-gradient(#2A6496, #1f4d74); }
+            background: radial-gradient(red, #1f4d74); }
+
+/*# sourceMappingURL=Home.css.map */

@@ -8,7 +8,7 @@ body {
     //background: red;
     max-width: 1600px;
     margin: 0 auto;
-
+ 
     #main {
         display: flex;
         flex-flow: row wrap;
@@ -25,6 +25,9 @@ body {
             margin-top: 2px;
             width: 100%;
             text-align: center;
+            background: lighten($mainColor, 5%);
+            color: #fff;
+            border: none;
         }
 
         #content {

@@ -8,8 +8,8 @@
   height: 132px;
   display: flex;
   flex-flow: column wrap;
-  background: #2A6496;
-  background: linear-gradient(to top, #2A6496, #fff);
+  background: red;
+  background: linear-gradient(to top, red, #fff);
   border-bottom: 2px solid #fff;
   font-family: Sugar; }
   #main-header .logo {
@@ -57,7 +57,7 @@
             text-decoration: none; }
           #main-header nav #main-menu li a:hover {
             background: #fff;
-            color: #2A6496; }
+            color: red; }
         #main-header nav #main-menu li #menu {
           cursor: pointer;
           display: none; }
@@ -69,9 +69,9 @@
             #main-header nav #main-menu li #drop-down li a {
               border: 1px solid #fff;
               border-radius: 0;
-              background: #2A6496; }
+              background: red; }
               #main-header nav #main-menu li #drop-down li a:hover {
-                border: 1px solid #2A6496;
+                border: 1px solid red;
                 background: #fff; }
     #main-header nav .search {
       width: 250px;
@@ -206,3 +206,5 @@
         width: 100%;
         align-self: center; }
  }
+
+/*# sourceMappingURL=header.css.map */

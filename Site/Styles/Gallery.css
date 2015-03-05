@@ -47,7 +47,7 @@ body {
       body #main #content img {
         width: 250px;
         height: 150px;
-        border: 1px solid #2A6496;
+        border: 1px solid red;
         border-radius: 4px;
         margin: 20px;
         transition: all 4s; }
@@ -55,5 +55,7 @@ body {
           body #main #content img {
             width: 200px; } }
         body #main #content img:hover {
-          border: 1px solid #142f46;
+          border: 1px solid #990000;
           cursor: help; }
+
+/*# sourceMappingURL=Gallery.css.map */
